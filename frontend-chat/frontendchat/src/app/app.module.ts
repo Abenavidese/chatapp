@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
+import { FormsModule } from '@angular/forms';
 
 const config: SocketIoConfig = { url: "http://localhost:8988", options: {}}
 
@@ -16,7 +17,8 @@ const config: SocketIoConfig = { url: "http://localhost:8988", options: {}}
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SocketIoModule.forRoot(config)
+    SocketIoModule.forRoot(config),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

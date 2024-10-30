@@ -1,1 +1,10 @@
-<p>chat works!</p>
+<div class="container mt-5"  *ngIF="messages">
+    <ul *ngFor="let message of messages" class="list-group">
+        <li class="list-group-item ">{{message}}</li>
+      </ul>
+
+</div>
+<form>
+    <input class="text" name="messages" [(ngModel)]="message">
+    <button (click)="sendMessage()">Enviar</button>
+</form>
