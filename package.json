@@ -1,0 +1,16 @@
+{
+  "name": "proyectochat",
+  "version": "1.0.0",
+  "description": "Chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Benavides/Peralta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "socket.io": "^4.8.1"
+  }
+}
